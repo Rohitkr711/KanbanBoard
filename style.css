@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: #500073;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Board */
+.board{
+    height: 70vh;
+    background-color: #fff;
+    width: 280px;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Board Heading */
+.boardHeading{
+    /* border: 1px solid red; */
+}
+.boardHeadingContent{
+    text-decoration: underline;
+}
+
+/* Board Cards */
+.boardCardItems{
+    margin-top: 16px;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    row-gap: 8px;
+}
+.boardCardItem{
+    border: 1px solid;
+    padding: 12px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.boardItem:hover{
+    background-color:#FCC737;
+}
+
+
+/* Board Add Button */
+.addButton{
+    /* border: 1px solid red; */
+}
+.add-task-btn{
+    border: 1px solid;
+    width: fit-content;
+    border-radius: 4px;
+    padding: 2px 4px;
+    cursor: pointer;
+    font-size: 12px;
+}

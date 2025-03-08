@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- TODO Board -->
+        <div id="TodoBoard" class="board">
+            <div class="boardHeading">
+                <h3 class="boardHeadingContent">TODO</h3>
+            </div>
+            <div class="boardCardItems">
+                <div draggable="true" class="boardCardItem">
+                    <p class="boardCardItemContent">Learn DOM</p>
+                </div>
+                <div draggable="true" class="boardCardItem">
+                    <p class="boardCardItemContent">Learn React</p>
+                </div>
+            </div>
+            <div class="addButton">
+                <div class="add-task-btn" id="TodoBoardAddBtn">
+                    <p>Add Task</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Board -->
+        <div id="ProgressBoard" class="board">
+            <div class="boardHeading">
+                <h3 class="boardHeadingContent">In Progress</h3>
+            </div>
+            <div class="boardCardItems">
+                <div class="boardCardItem" draggable="true">
+                    <p class="boardCardItemContent">Learn DOM</p>
+                </div>
+                <div class="boardCardItem" draggable="true">
+                    <p class="boardCardItemContent">Learn React</p>
+                </div>
+            </div>
+            <div class="addButton">
+                <div class="add-task-btn" id="ProgressBoardBtn">
+                    <p>Add Task</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Completion Board -->
+        <div id="CompletionBoard" class="board">
+            <div class="boardHeading">
+                <h3 class="boardHeadingContent">Completed</h3>
+            </div>
+            <div class="boardCardItems">
+                <div class="boardCardItem">
+                    <p draggable="true" class="boardCardItemContent">Learn DOM</p>
+                </div>
+            </div>
+            <div class="addButton">
+                <div class="add-task-btn">
+                    <p>Add Task</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
